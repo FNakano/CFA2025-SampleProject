@@ -2,13 +2,13 @@ Convergência de https://github.com/FNakano/CFA/blob/master/partirDoZero.md , ht
 
 **nota do autor**: A partir do momento em que comecei a escrever esta documentação até o dispositivo desenvolvido estar do jeito que eu acredito ser um *pacote pronto*, levou uma semana.
 
-# Dispositivo conectado para controle de tomadas
+# Amostra de Dispositivo conectado ~~para controle de tomadas~~
 
 ## Objetivo(s)
 
 Exemplificar um projeto: elaboração da proposta, execução, elaboração do relatório conforme https://github.com/FNakano/CFA/blob/master/partirDoZero.md
 
-Atualizar os projetos https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet , https://github.com/FNakano/CFA/tree/master/projetos/py-tomadas 
+~~Atualizar os projetos https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet , https://github.com/FNakano/CFA/tree/master/projetos/py-tomadas ~~
 
 Implementar funcionalidades que acho interessantes como execução concorrente de servidor web e terminal de programação e serviço para mostrar mensagens no dispositivo. 
 
@@ -16,7 +16,9 @@ Implementar funcionalidades que acho interessantes como execução concorrente d
  
 ## Introdução
 
-Existe uma variedade de *smart bulbs* e *smart plugs* no mercado. Esses dispositivos são uma espécie de símbolo da *smartificação*. Sua utilidade é bastante clara, quase lúdica, embora o custo/benefício do dispositivo comparado com interruptores de parede gere discussão.
+~~Existe uma variedade de *smart bulbs* e *smart plugs* no mercado. Esses dispositivos são uma espécie de símbolo da *smartificação*. Sua utilidade é bastante clara, quase lúdica, embora o custo/benefício do dispositivo comparado com interruptores de parede gere discussão.~~
+
+Documentar um dispositivo para que este seja reproduzido, usado e desenvolvido/mantido pede que se construa/mantenha uma quantidade de documentação. Esta é uma amostra da documentação para uma amostra de projeto. A idéia que originou o projeto e a documentação está em https://github.com/FNakano/CFA/blob/master/partirDoZero.md . Muitos comentários (opiniões) foram mantidos(as) a fim de mostrar que mesmo quem define o que entregar precisa de tempo e trabalho para definir e para entregar.
 
 Do ponto de vista construtivo é um sistema de informação composto por circuito físico, servidor web, interfaces de uso e circulação de informação. 
 
@@ -55,16 +57,6 @@ Ver Figura 1
 | Display OLED 128x64 com interface I2C | 1 | Na figura 1, display mostrando letras em azul, conectada ao protoboard | 
 | Resistor $4k7\Omega$ | 2 | Resistores de pull-up para SDA e SCL, conectados ao protoboard | 
 | Protoboard | 1 | Na figura 1, bloco branco contendo contatos. Serve para conectar os terminais dos componentes e construir o circuito | 
-| [Relé Shield](../../componentes/atuadores/rele/README.md) | 3 | [três módulos, esquerda das tomadas, com o relé azul](a acrescentar) |
-| Fonte 5V (carregador para celular, battery pack ou equivalente) | 1 | [a acrescentar) |
-| tomada | 4 | ver https://github.com/FNakano/CFA/tree/master/projetos/py-tomadas#dispositivo |
-| plugue | 1 | ver https://github.com/FNakano/CFA/tree/master/projetos/py-tomadas#dispositivo |
-| chapadur para apoiar montagem | 1 | ver https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet#materiais-e-m%C3%A9todos--quais-s%C3%A3o-os-ingredientes-e-o-que-fazer-com-eles-para-chegar-nos-resultados |
-| cabo de par 1.0mm | 1 | ver https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet#materiais-e-m%C3%A9todos--quais-s%C3%A3o-os-ingredientes-e-o-que-fazer-com-eles-para-chegar-nos-resultados |
-| segmentos 2.5mm^2 | 1 | ver https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet#materiais-e-m%C3%A9todos--quais-s%C3%A3o-os-ingredientes-e-o-que-fazer-com-eles-para-chegar-nos-resultados |
-| Conector Sindal | 1 | ver https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet#materiais-e-m%C3%A9todos--quais-s%C3%A3o-os-ingredientes-e-o-que-fazer-com-eles-para-chegar-nos-resultados |
-| placa de distribuição de energia | 1 | ver https://github.com/FNakano/CFA/tree/master/projetos/ControlarTomadaPelaInternet#materiais-e-m%C3%A9todos--quais-s%C3%A3o-os-ingredientes-e-o-que-fazer-com-eles-para-chegar-nos-resultados | 
-
 
 #### Montagem
 
