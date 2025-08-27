@@ -183,5 +183,7 @@ Este projeto pode servir como base para outros:
   - ex.: placa de desenvolvimento funcionando como servidor, recebendo requisições de exibição de mensagens no display a cada 10 segundos;
 - Testar a duração de diferentes fontes de energia em diferentes placas de desenvolvimento com benchmarks padronizados;
   - Em cada plataforma, testar para fornecimento de energia através de baterias 18340, 18650, pilhas AA, AAA, hacks em powerbanks, ...
+  - Quando possível, testar diferentes modos de gerenciamento de energia. Por exemplo *light sleep*, *deep sleep*, ...
+  - esboço em https://github.com/FNakano/CFA/tree/master/projetos/py-TestSupplyPower
   
 Ocorre que estes são de interesse meu, podem não ser de interesse de quem ler este relatório.
