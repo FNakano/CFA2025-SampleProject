@@ -173,3 +173,15 @@ Desenvolver este projeto levou muito mais tempo do que o esperado (eu esperava d
    - Inclusão de funcionalidades como Webrepl;
    - Inclusão de documentação como o grafo de chamada;
 2. O sistema de informação, em especial o programa, poderia ser mais simples. Tornou-se elaborado considerando desenvolvimentos futuros em que podem ser agregadas muito mais funcionalidades em um contexto multiusuário.
+
+Este projeto pode servir como base para outros:
+
+- Testar a portabilidade deste projeto para diferentes placas de desenvolvimento;
+  - Este particular foi testado no Ai-Thinker ESP32-C3 12F. Poderia testar no ESP32S, ESP32-C3 super mini, ESP32-C3 super mini com display OLED, ...
+- Padronizar benchmarks e testá-los
+  - taxa de respostas corretas, duração da bateria (se for o caso), latência (se for possível), ...
+  - ex.: placa de desenvolvimento funcionando como servidor, recebendo requisições de exibição de mensagens no display a cada 10 segundos;
+- Testar a duração de diferentes fontes de energia em diferentes placas de desenvolvimento com benchmarks padronizados;
+  - Em cada plataforma, testar para fornecimento de energia através de baterias 18340, 18650, pilhas AA, AAA, hacks em powerbanks, ...
+  
+Ocorre que estes são de interesse meu, podem não ser de interesse de quem ler este relatório.
