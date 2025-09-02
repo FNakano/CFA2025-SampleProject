@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Static File Serving Demo</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Static File Serving Demo</h1>
+    <img src="static/logo.png" alt="logo">
+    
+    Este é um servidor web hospedado em uma placa de 
+    desenvolvimento ESP32. Idealmente a placa deve ter 
+    conectados ou embarcados um LED RGB e um display OLED.
+    O controlador do display deve ser um SSD1306.
+    <br><br>Mais informação sobre o projeto básico em 
+    https://github.com/FNakano/CFA2025-SampleProject
+
+<br>As rotas que podem ser acessadas no servidor são:
+
+<br>| rota | efeito no navegador | efeito no dispositivo |
+<br>| --- | --- | --- |
+<br>| / | mostra a página index.html | - |
+<br>| /hello | mostra o texto 'hello from device001.local' | - |
+<br>| /red | mostra o texto on caso o LED da cor esteja aceso, off caso o LED esteja apagado | - |
+<br>| /blue | mostra o texto on caso o LED da cor esteja aceso, off caso o LED esteja apagado | - |
+<br>| /green | mostra o texto on caso o LED da cor esteja aceso, off caso o LED esteja apagado | - |
+<br>| /red/on | mostra o texto on | acende o led vermelho |
+<br>| /blue/on | mostra on | acende o led azul |
+<br>| /green/on | mostra on | acende o led verde |
+<br>| /red/off | mostra o texto off | apaga o led vermelho |
+<br>| /blue/off | mostra off | apaga o led azul |
+<br>| /green/off | mostra off | apaga o led verde |
+<br>| /message | mostra o texto que está sendo mostrado no display | - |
+<br>| /message?text="xxx" | mostra o texto passado como argumento em 'text' | mostra no display o texto passado como argumento em 'text' |
+<br>| /static/webrepl/webrepl.html | Mostra a página para acesso a interface de comando (REPL) | - |
+
+<br><br>O aplicativo é iniciado com o comando `import startsystem` digitado no REPL (Thonny).
+
+  </body>
+</html>

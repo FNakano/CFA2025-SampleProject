@@ -178,6 +178,8 @@ Este projeto pode servir como base para outros:
 
 - Testar a portabilidade deste projeto para diferentes placas de desenvolvimento;
   - Este particular foi testado no Ai-Thinker ESP32-C3 12F. Poderia testar no ESP32S, ESP32-C3 super mini, ESP32-C3 super mini com display OLED, ...
+  - (2025-09-02) Testei com ESP32-C3 super mini plus. O modelo tem um LED RGB endereçável conectado ao pino 8 e antena externa. A nova versão resultante deste teste está armazenada em `/src-v2`. Contém mais documentação no código-fonte e mesmo sem LEDs e sem display inicia o servidor web (ié não aborta a execução por algum erro com LEDs ou display) e envia mais mensagens, inclusive endereço IP para o terminal (ex. Thonny) [Clique para ver foto: embaixo à esquerda ESP32-C3 12F, em cima no centro com LED vermelho aceso ESP32-C3 super mini plus](./5024195371143901356.jpg)
+
 - Padronizar benchmarks e testá-los
   - taxa de respostas corretas, duração da bateria (se for o caso), latência (se for possível), ...
   - ex.: placa de desenvolvimento funcionando como servidor, recebendo requisições de exibição de mensagens no display a cada 10 segundos;
